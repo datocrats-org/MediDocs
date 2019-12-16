@@ -12,9 +12,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 
-
-
-
 app.get('/ipfs',async function(req,res){
 
 console.log('inside ipfs');
@@ -31,12 +28,8 @@ const node = new IPFS()
 node.on('ready', async () => {
     console.log('iniside sample code')
 
-    
-
     // const version = await node.version()
 
-    
-    
     // console.log('Version:', version.version)
 
     var date = new Date();
@@ -61,16 +54,8 @@ node.on('ready', async () => {
       } catch (error) {
         console.error('Node failed to stop cleanly!', error)
       }
-
-  
   })
-  
-
 })
-
-
-
-
 
 let server = app.listen(4000, function() {
     console.log('Server is listening on port 4000')

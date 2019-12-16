@@ -15,17 +15,13 @@ app.get('/', function (req, res) {
   client.messages
         .create({
           body: 'Record Created!',
-          from: 'whatsapp:+14155238886',
-          to: 'whatsapp:+918289940688'
+          from: 'whatsapp:+10000000000',
+          to: 'whatsapp:+100000000000'
         })
         .then(message => console.log(message.sid))
         .done();
-
-
-
 });
 
 app.listen(5000, function () {
   console.log('Example app listening on port 5000!');
 });
-

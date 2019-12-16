@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import sha256 from 'crypto-js/sha256';
-import Card from 'card-vibes';
 
-import { BrowserRouter as Router, Route, Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { ngrokurl } from './URL.js';
 var url = ngrokurl;
 url = url + '/createDoctor';
@@ -64,9 +62,6 @@ class CreateRecordDoctor extends Component {
     return (
       <div className="App" >
         <div className="App__Forms">
-
-
-
           <div className="FormTitle">
             <NavLink exact to="#" activeClassName="FormTitle__Link--Active" className="FormTitle__Link">Create Doctor </NavLink>
             {/* or <NavLink to="/sign-up" activeClassName="FormTitle__Link--Active" className="FormTitle__Link">Sign Up</NavLink> */}
